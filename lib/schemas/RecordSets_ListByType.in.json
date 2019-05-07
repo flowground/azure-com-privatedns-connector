@@ -1,0 +1,44 @@
+{
+    "type": "object",
+    "properties": {
+        "resourceGroupName": {
+            "required": true,
+            "type": "string"
+        },
+        "privateZoneName": {
+            "required": true,
+            "type": "string"
+        },
+        "recordType": {
+            "required": true,
+            "type": "string",
+            "enum": [
+                "A",
+                "AAAA",
+                "CNAME",
+                "MX",
+                "PTR",
+                "SOA",
+                "SRV",
+                "TXT"
+            ]
+        },
+        "subscriptionId": {
+            "required": true,
+            "type": "string"
+        },
+        "_top": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "_recordsetnamesuffix": {
+            "required": false,
+            "type": "string"
+        },
+        "api_version": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}
